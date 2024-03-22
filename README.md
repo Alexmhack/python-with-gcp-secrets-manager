@@ -19,6 +19,9 @@ serving FastAPI app.
 
 4. `AttrDict` -> This is a custom written utility which helps to convert a Python dict to a class object which has access to all the dict keys using `.` notation. For e.g. if a secret is `{"API_VERSION": "14"}` then using `AttrDict` instance we can access it using `attr_dict_instance.API_VERSION  # output -> 14`
 
+5. We can even use region wise secrets by defining the secrets in multiple regions of Secrets Manager Provider (AWS / GCP). This can be 
+helpful when we have different servers in different regions and we want to match the Secrets with those regions and access accordingly.
+
 
 ## AWS Setup
 
